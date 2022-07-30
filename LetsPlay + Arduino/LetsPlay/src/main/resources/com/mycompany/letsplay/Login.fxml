@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.letsplay.LoginUIController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="720.0" prefWidth="730.0" styleClass="Image" stylesheets="@LetsPlayStyleSheet.css">
+               <children>
+                  <Pane prefHeight="726.0" prefWidth="678.0" styleClass="DarkPane" stylesheets="@LetsPlayStyleSheet.css" />
+               </children></Pane>
+            <VBox prefHeight="720.0" prefWidth="655.0">
+               <children>
+                  <HBox prefHeight="60.0" prefWidth="654.0">
+                     <children>
+                        <Pane prefHeight="60.0" prefWidth="460.0" />
+                        <JFXButton fx:id="minimizeButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#minimizeApplicationAction" prefHeight="60.0" prefWidth="98.0">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="MINUS" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="closeButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" onAction="#closeApplicationAction" prefHeight="60.0" prefWidth="105.0">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CLOSE" size="20" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="200.0" fitWidth="265.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="120.0" right="120.0" top="20.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../../imageAssets/LetsPlayLogo.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="187.0">
+                     <font>
+                        <Font name="System Bold" size="45.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="120.0" right="120.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                 <JFXTextField fx:id="gebruikersNaam" promptText="Gebruikersnaam">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="120.0" right="120.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="gebruikersWachtwoord" promptText="Wachtwoord">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="120.0" right="120.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+                  <Label fx:id="labelMelding" textFill="RED">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="120.0" right="120.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="loginButton" onAction="#userLoginAction" prefHeight="77.0" prefWidth="510.0" style="-fx-background-color: black;" text="Login" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="120.0" right="120.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

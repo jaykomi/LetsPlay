@@ -1,0 +1,36 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15 apr. 2022, 15:16:53
+    Author     : Jeremy Doeve
+*/
+
+.Image{
+    -fx-background-image:url("../../..//imageAssets/LoginImage.jpg");
+    -fx-background-position:top left;
+    -fx-background-repeat:stretch;
+    -fx-background-size:cover;
+}
+
+.DarkPane{
+    -fx-background-color:rgba(0,0,0,0.7);
+}
+
+.SideBar{
+    -fx-background-color:#ff6600;
+    -fx-border-width: 1px;
+    -fx-border-color:#000000;
+}
+
+.ImageView{
+   -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+}
+
+
+.OrangeColor{
+    -fx-background-color:#ff6600;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="startschermPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.letsplay.StartschermGameController">
+   <children>
+      <Pane layoutX="231.0" layoutY="-37.0" prefHeight="88.0" prefWidth="408.0">
+         <children>
+            <JFXButton fx:id="pasOphalen" layoutX="7.0" layoutY="35.0" onAction="#pasDataOphalen" prefHeight="43.0" prefWidth="157.0" styleClass="OrangeColor" stylesheets="@LetsPlayStyleSheet.css" text="Pas data ophalen" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXTextField fx:id="rfidTag" editable="false" layoutX="204.0" layoutY="38.0" promptText="RFID tag">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <VBox layoutX="52.0" layoutY="187.0" prefHeight="246.0" prefWidth="60.0" spacing="50.0">
+         <children>
+            <JFXButton fx:id="afspeelKnop" contentDisplay="GRAPHIC_ONLY" onAction="#speelInstructie">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLAY" size="35" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="pauzeKnop" contentDisplay="GRAPHIC_ONLY" onAction="#pauzeerInstructie">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PAUSE" size="35" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="resetKnop" contentDisplay="GRAPHIC_ONLY" onAction="#resetInstructie">
+               <graphic>
+                  <FontAwesomeIconView glyphName="UNDO" size="35" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </VBox>
+      <HBox layoutX="124.0" layoutY="69.0" prefHeight="482.0" prefWidth="854.0" style="-fx-border-color: gray;">
+         <children>
+            <MediaView fx:id="instructieVideo" fitHeight="480.0" fitWidth="852.0" />
+         </children>
+      </HBox>
+      <JFXButton fx:id="startKnop" layoutX="778.0" layoutY="569.0" onAction="#startGame" prefHeight="77.0" prefWidth="260.0" styleClass="OrangeColor" stylesheets="@LetsPlayStyleSheet.css" text="Start game" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="78.0" prefHeight="36.0" prefWidth="68.0" text="Game">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

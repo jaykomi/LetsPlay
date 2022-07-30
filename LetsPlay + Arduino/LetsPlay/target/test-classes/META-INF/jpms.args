@@ -1,0 +1,4 @@
+--patch-module
+com.mycompany.letsplay=_
+--add-reads
+com.mycompany.letsplay=ALL-UNNAMED

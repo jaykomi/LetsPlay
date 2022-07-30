@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.letsplay.GameController">
+   <children>
+      <JFXButton fx:id="redButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="206.0" layoutY="76.0" prefHeight="113.0" prefWidth="232.0" style="-fx-background-color: red;">
+         <graphic>
+            <ImageView fx:id="imageRood" fitHeight="220.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="yellowButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="551.0" layoutY="76.0" prefHeight="113.0" prefWidth="232.0" style="-fx-background-color: yellow;">
+         <graphic>
+            <ImageView fx:id="imageGeel" fitHeight="220.0" fitWidth="289.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="greenButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="206.0" layoutY="355.0" prefHeight="113.0" prefWidth="232.0" style="-fx-background-color: green;">
+         <graphic>
+            <ImageView fx:id="imageGroen" fitHeight="220.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="blueButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="551.0" layoutY="355.0" prefHeight="113.0" prefWidth="232.0" style="-fx-background-color: blue;">
+         <graphic>
+            <ImageView fx:id="imageBlauw" fitHeight="220.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <TextField fx:id="kindTag" disable="true" editable="false" layoutX="14.0" layoutY="25.0" visible="false" />
+      <JFXButton fx:id="nieuwButton" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="440.0" layoutY="550.0" onAction="#herstartGame" prefHeight="78.0" prefWidth="182.0" styleClass="OrangeColor" stylesheets="@LetsPlayStyleSheet.css" text="Nieuwe Ronde" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="eindeImage" fitHeight="399.0" fitWidth="651.0" layoutX="370.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+   </children>
+</Pane>
